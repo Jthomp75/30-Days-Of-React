@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+       html,
+      body {
+        height: 100%;
+        line-height: 1.5;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: black;
+      }
+      .root {
+        min-height: 100%;
+        position: relative;
+      }
+      .header-wrapper,
+      .main-wrapper,
+      .footer-wrapper {
+        width: 85%;
+        margin: auto;
+      }
+       .header-wrapper,
+      .main-wrapper {
+        padding: 10px;
+        margin: 2px auto;
+      }
+
+      .header-wrapper{
+        display: flex;
+      }
+
+      .name{
+        left: 0;
+      }
+
+      .infoRight{
+        margin: auto;
+        position: absolute;
+        right: 0;
+        padding-right: 30px;
+        top: 0;
+        padding-top: 15px;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-weight: 300;
+      }
+
+      header {
+        background-color: #595f60;
+        color: white;
+        padding: 10px;
+      }
+
+      main {
+        margin-top: 75px;
+        padding: 10px;
+        padding-bottom: 60px;
+        /* Height of the footer */
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        /* Height of the footer */
+        background: #595f60;
+        color: white;
+      }
+
+      .footer-wrapper {
+        font-weight: 400;
+        text-align: center;
+        line-height: 60px;
+      }
+
+      .smileyface{
+        
+        width: 40%;
+        width: 300px;
+	height: 300px;
+	position: relative;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	display: block;
+	background: #ffe632;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fffe8d), to(#f6d23e));
+	background: -moz-linear-gradient(top,  #fffe8d,  #f6d23e);	
+	box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	-moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+	
+      }
+
+      .info{
+        width: 60%;
+        margin: auto;
+
+      }
+
+      .main-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p.eyes {
+	width: 50px;
+	height: 80px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: 40px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}	
+	
+	.eyes.lefteye {
+		left: 75px;
+		}
+		
+	.eyes.righteye {
+		right: 75px;
+		}
+		
+.smile {
+	width: 200px;
+	height: 70px;
+	border: 10px solid #222;
+	border-top: 0;
+	background: rgba(0,0,0,0);
+	-moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	-webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	-moz-box-shadow: 0 2px 0 rgba(255,255,255, 0.8);
+	}
+	
+.corner {
+	width: 10px;
+	height: 30px;
+	background: #222;
+	border-radius: 100px/160px;
+	-webkit-border-radius: 100px 160px;
+	-moz-border-radius: 100px/160px;
+	position: absolute;
+	top: -12px;
+	-webkit-transform: rotate(65deg);
+	-moz-transform: rotate(65deg);
+	left: -12px;
+	}
+	
+	.corner.right {
+		left: 182px;
+		-webkit-transform: rotate(-65deg);
+		-moz-transform: rotate(-65deg);		
+		}
+
+    </style>
+</head>
+<body>
+    <div class="root"></div>
+
+    <script
+    crossorigin
+    src="https://unpkg.com/react@16/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  ></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+
+    const rootElement = document.querySelector(".root")
+    //const name = "Jamie Thompson"
+
+    const user = {
+        name : "Jamie Thompson",
+        country: "Northern Ireland",
+        title : "Software Developer",
+        gender: "Male",
+        email: "jamiethompson638@gmail.com",
+        phone: "07724483886",
+    }
+
+    const header = (
+        <header>
+            <div className='header-wrapper'>
+                <div className='name'><h1>{user.name}</h1></div>
+                
+                <div className='infoRight'>
+                    <p>{user.country}</p>
+                    <p>{user.title}</p>
+                    <p>{user.gender}</p>
+                    <p>{user.email}</p>
+                    <p>{user.phone}</p>
+                </div>
+            </div>    
+        </header>
+    )
+
+    const main = (
+        <main>
+            <div className = 'main-wrapper'>
+                
+                    <div className="smileyface">
+                        <p className="eyes lefteye"></p>
+                        <p className="eyes righteye"></p>
+                        <div className="smile">
+                        <div className="corner"></div>
+                        <div className="corner right">
+                    </div>
+                
+</div>
+                </div>
+                <div className='info'>
+                    <p>I am orignally from a town called Moygashel in Dungannon, Tyrone. I have lived there since i was born on June 30<sup>th</sup> 2003.
+                        I went to Howard Primary and Royal School Dungannon</p>
+                    <p>I am now in my second year of Uni studying Computer Science at QUeen's University Belfast. I am really enjoying it 
+                        and have learned a lot about Networks, CyberSecurity and Web Dev.</p>
+                    <p>Next year i will be on placement with IBM Belfast, whose offices are out by Titanic Quarter. I start on June 26th and cannot wait.
+                        I will be wokring on team Spectre and will be tasked with modernising QRadar. My job will entail front end web development using React.JS.</p>
+                    </div>
+            </div>    
+        </main>
+    )
+
+    const footerData = "This is a Footer"
+    const footer = (
+        <footer>
+            <div className = 'footer-wrapper'>
+                <p>{footerData}</p>
+            </div>
+        </footer>
+    )
+
+    const app = (
+        <div>
+            {header}
+            {main}
+            {footer}
+        </div>
+    )
+
+
+
+    //console.log(React)
+    ReactDOM.render(app,rootElement)
+  </script>
+</body>
+</html>
