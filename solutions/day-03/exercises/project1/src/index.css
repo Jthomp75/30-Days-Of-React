@@ -1,0 +1,103 @@
+.ex1-header-wrapper{
+    text-align: center;
+}
+
+.ex1-main-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    background-color: white;
+    color: dimgrey;
+    border-radius: 5px;
+    height: 20px;
+    border: 0px;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.ex2-main-wrapper{
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.ex2{
+    background-color: rgb(157, 221, 200);
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    width: 80vh;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(212, 58, 58);
+    border: 0px;
+    border-radius: 5px;
+    width: 30vh;
+    height: 30px;
+    margin: 10px;
+}
+
+.ex2title{
+    padding-top: 10px;
+}
+
+.skill{
+    background-color: blueviolet;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin: 5px;
+    width: fit-content;
+    padding: 5px;
+
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ex3{
+    font-family: 'Roboto';
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ex3img_head{
+    height: 15%;
+    width: 15%;
+    
+    border-radius: 100%;
+}
+
+.ex3img_clock{
+    height: 12px;
+    width: 12px;
+}
+
+.ex3-footer-wrapper{
+    display: flex;
+}
+
+.ex3-clock-container{
+    margin-top: 16px;
+    padding-right: 5px;
+}
+
+.name-div{
+    display: flex;
+}
+
+.tick-container{
+    margin-top: 28px;
+    padding-left: 5px;
+}
+
+
+
