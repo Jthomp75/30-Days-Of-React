@@ -1,0 +1,110 @@
+
+
+.ex1-wrapper{
+  background-color: rgb(181, 188, 185);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10px;
+}
+
+.ex1-header-wrapper{
+  text-align: center;
+  padding: 10px;
+}
+
+.ex1-main-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.ex1-header-wrapper > h1{
+  font-family: monospace;
+}
+
+
+.ex2-wrapper{
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: monospace
+}
+
+.input{
+  width: fit-content;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btn{
+  background-color: brown;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  margin:10px;
+  font-weight: bold;
+}
+
+.ex3-main-wrapper{
+  text-align: center;
+}
+
+.colour-div{
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 18px;
+
+}
+
+.skills-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill{
+  background-color:rgb(50, 70, 216);
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+}
+
+.name{
+  display: flex;
+}
+
+.tick{
+  margin-top: 27px;
+  height: fit-content;
+  padding-left: 5px;
+}
+
+.clock{
+  height: 16px;
+  margin-top: 17px;
+  padding-right: 5px;
+}
+
+.ex4-footer-wrapper{
+  display: flex;
+
+  
+
+}
+
+.ex4-head{
+  border-radius: 100%;
+}
+
+.ex4-wrapper{
+  background-color: rgb(235, 224, 209);
+  padding: 10px;
+  border-radius: 10px;
+}

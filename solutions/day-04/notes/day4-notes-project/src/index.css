@@ -1,0 +1,20 @@
+.header-wrapper{
+    background-color: aquamarine;
+    padding: 20px 20px 20px 80px
+}
+
+.app{
+    font-family: 'Montserrat';
+}
+
+.footer-wrapper{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.user-img{
+    border-radius: 100%;
+}
